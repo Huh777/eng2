@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamEase - Simplify Exam Applications</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1e40af;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to ExamEase</h1>
+    <p>Simplify your college exam applications and results management.</p>
+
+    <div class="card">
+        <input type="email" id="email" placeholder="Enter your email to get started">
+        <button onclick="signUp()">Sign Up</button>
+    </div>
+
+    <script>
+        function signUp() {
+            let email = document.getElementById("email").value;
+            if (email) {
+                alert("Welcome to ExamEase! Your email: " + email);
+            } else {
+                alert("Please enter a valid email.");
+            }
+        }
+    </script>
+
+</body>
+</html>
